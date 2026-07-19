@@ -120,7 +120,7 @@ analyzer/blob/4e19eec00d3130e265972293092dc6128867e07d/AI_analysis.png)
 
 ## 👁 Groq Vision Analysis
 
-![iamge alt]()
+![iamge alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/bdae1b56c13157eb507cc29b4a0d348c827b8cf9/Groq_vision.png)
 ---
 
 ## 📈 Analytics Dashboard
