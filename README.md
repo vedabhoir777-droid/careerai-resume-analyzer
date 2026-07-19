@@ -109,7 +109,7 @@ careerai-resume-analyzer/
 
 ## 📄 Resume Manager
 
-![image alt]()
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/c91bfd0ab0d7884f04fb29ece491bffc4d9f55a1/Resume_manager.png)
 ---
 
 ## 🤖 AI Resume Analysis
