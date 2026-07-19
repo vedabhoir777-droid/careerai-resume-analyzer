@@ -1,11 +1,11 @@
 import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-import Hero from "../Landing/Hero";
-import Features from "../Landing/Features";
-import Stats from "../Landing/Stats";
-import CTA from "../Landing/CTA";
-import Footer from "../Landing/Footer";
+import Hero from "../landing/Hero";
+import Features from "../landing/Features";
+import Stats from "../landing/Stats";
+import CTA from "../landing/CTA";
+import Footer from "../landing/Footer";
 
 import "./Home.css";
 
