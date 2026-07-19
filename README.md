@@ -90,7 +90,7 @@ careerai-resume-analyzer/
 
 ## 🏠 Landing Page
 
-*(Insert Screenshot)*
+*(https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/4f74ad14d5723092ea8faa1215345b3f4fd29907/Landing.png)*
 
 ---
 
