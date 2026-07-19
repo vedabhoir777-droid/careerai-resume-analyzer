@@ -131,7 +131,7 @@ analyzer/blob/4e19eec00d3130e265972293092dc6128867e07d/AI_analysis.png)
 
 ## 👤 Profile Page
 
-![image alt]()
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/fb5ba0c8d595c5c23255afb1a4a1cc0de73ead84/Profile.png)
 ---
 
 # 🔄 Application Workflow
