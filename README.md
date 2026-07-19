@@ -125,7 +125,7 @@ analyzer/blob/4e19eec00d3130e265972293092dc6128867e07d/AI_analysis.png)
 
 ## 📈 Analytics Dashboard
 
-![image alt]()
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/982d636fedc0f4a8fb487925da5e0272ca0fc9ba/Analytics.png)
 
 ---
 
