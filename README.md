@@ -104,7 +104,7 @@ careerai-resume-analyzer/
 
 ## 📊 Dashboard
 
-![iamge alt]()
+![iamge alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/4af96ad10c522b5f6a2b603d91ebcd6f4c5c2dcc/Dashboard.png)
 ---
 
 ## 📄 Resume Manager
