@@ -72,7 +72,7 @@ careerai-resume-analyzer/
 │   ├── components/
 │   ├── context/
 │   ├── hooks/
-│   ├── Landing/
+│   ├── landing/
 │   ├── lib/
 │   ├── pages/
 │   ├── App.jsx
