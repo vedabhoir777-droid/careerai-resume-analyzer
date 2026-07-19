@@ -193,7 +193,7 @@ Email Report (Resend)
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/careerai-resume-analyzer.git
+git clone https://github.com/vedabhoir777-droid/careerai-resume-analyzer.git
 ```
 
 Go to the project folder
