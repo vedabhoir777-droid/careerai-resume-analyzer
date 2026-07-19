@@ -98,7 +98,7 @@ careerai-resume-analyzer/
 ---
 ## 📝 Signup Page
 
-![image alt]()
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/723985507fbf134f324c7ea0a4b691d7c3aa5d6b/Signup.png)
 
 ---
 
