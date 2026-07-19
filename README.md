@@ -9,7 +9,7 @@ CareerAI is an AI-powered Resume Analyzer that helps users upload resumes, recei
 # 🌐 Live Demo
 
 **Vercel Deployment:**  
-https://YOUR-VERCEL-LINK.vercel.app
+https://careerai-resume-analyzer-seven.vercel.app/
 
 ---
 
