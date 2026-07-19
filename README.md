@@ -114,8 +114,7 @@ careerai-resume-analyzer/
 
 ## 🤖 AI Resume Analysis
 
-![image alt](https://github.com/vedabhoir777-droid/careerai-resume
-analyzer/blob/4e19eec00d3130e265972293092dc6128867e07d/AI_analysis.png)
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/8820d0b911aef7b90645cbfd0f10659d4859921a/AI_analysis.png)
 ---
 
 ## 👁 Groq Vision Analysis
