@@ -1,0 +1,28 @@
+.dashboard-header{
+    margin-bottom:35px;
+}
+
+.dashboard-header h1{
+    font-size:34px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.dashboard-header p{
+    color:#64748b;
+    font-size:16px;
+    line-height:1.7;
+}
+
+@media(max-width:768px){
+
+.dashboard-header h1{
+    font-size:28px;
+}
+
+.dashboard-header p{
+    font-size:15px;
+}
+
+}

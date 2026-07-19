@@ -1,0 +1,468 @@
+/* =================================
+   RESUME PAGE
+================================= */
+
+.resume-page{
+    min-height:100vh;
+    background:#f8fafc;
+    padding:35px;
+    box-sizing:border-box;
+}
+
+/* =================================
+   PAGE HEADER
+================================= */
+
+.resume-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:32px;
+}
+
+.resume-header h1{
+    font-size:34px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.resume-header p{
+    color:#64748b;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* =================================
+   UPLOAD SECTION
+================================= */
+
+.upload-section{
+    margin-bottom:35px;
+}
+
+.upload-card{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    padding:32px;
+    box-shadow:
+    0 10px 25px rgba(15,23,42,.05);
+    transition:.3s;
+}
+
+.upload-card:hover{
+    box-shadow:
+    0 20px 40px rgba(15,23,42,.08);
+}
+
+/* =================================
+   UPLOAD HEADER
+================================= */
+
+.upload-header{
+    margin-bottom:28px;
+}
+
+.upload-header h2{
+    font-size:24px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.upload-header p{
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* =================================
+   FORM GROUP
+================================= */
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#334155;
+    font-weight:600;
+    font-size:14px;
+}
+
+.form-group input{
+    width:100%;
+    padding:15px 18px;
+    border:1px solid #d1d5db;
+    border-radius:14px;
+    background:#fafafa;
+    transition:.3s;
+    box-sizing:border-box;
+    font-size:15px;
+}
+
+.form-group input:focus{
+    outline:none;
+    border-color:#2563eb;
+    background:white;
+    box-shadow:
+    0 0 0 4px rgba(37,99,235,.10);
+}
+
+/* =================================
+   FILE UPLOAD
+================================= */
+
+.file-upload{
+    border:2px dashed #bfdbfe;
+    border-radius:18px;
+    padding:38px;
+    text-align:center;
+    background:#f8fbff;
+    transition:.3s;
+}
+
+.file-upload:hover{
+    border-color:#3b82f6;
+    background:#eff6ff;
+}
+
+.file-upload input{
+    width:100%;
+}
+
+.file-upload span{
+    display:block;
+    margin-top:14px;
+    color:#64748b;
+    font-size:14px;
+}
+
+/* =================================
+   UPLOAD BUTTON
+================================= */
+
+.upload-btn{
+    width:100%;
+    margin-top:24px;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:#2563eb;
+    color:white;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.upload-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+    box-shadow:
+    0 15px 30px rgba(37,99,235,.20);
+}
+/* =================================
+   EMPTY STATE
+================================= */
+
+.empty-state{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+    padding:70px 40px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+
+}
+
+.empty-state h2{
+
+    font-size:26px;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+
+}
+
+.empty-state p{
+
+    color:#64748b;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+/* =================================
+   RESUME GRID
+================================= */
+
+.resume-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+    gap:24px;
+
+}
+
+/* =================================
+   RESUME CARD
+================================= */
+
+.resume-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:22px;
+
+    padding:26px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+
+}
+
+.resume-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+}
+
+/* =================================
+   CARD TOP
+================================= */
+
+.resume-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:22px;
+
+}
+
+.resume-icon{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    flex-shrink:0;
+
+}
+
+.resume-info{
+
+    flex:1;
+
+}
+
+.resume-info h3{
+
+    margin:0;
+
+    color:#0f172a;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.skills{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+/* =================================
+   ACTION BUTTONS
+================================= */
+
+.resume-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:14px;
+
+    margin-top:20px;
+
+}
+
+.resume-actions button{
+
+    height:46px;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.view-btn,
+.analyze-btn,
+.edit-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.25s;
+}
+
+.view-btn:hover,
+.analyze-btn:hover,
+.edit-btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+.delete-btn{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.25s;
+}
+
+.delete-btn:hover{
+  background:#dc2626;
+  transform:translateY(-2px);
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media(max-width:900px){
+
+.resume-list{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.resume-page{
+
+    padding:22px;
+
+}
+
+.upload-card{
+
+    padding:24px;
+
+}
+
+.resume-actions{
+
+    grid-template-columns:1fr;
+
+}
+
+.resume-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.resume-header h1{
+
+    font-size:28px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.resume-card{
+
+    padding:20px;
+
+}
+
+.resume-top{
+
+    align-items:flex-start;
+
+}
+
+.resume-icon{
+
+    width:56px;
+
+    height:56px;
+
+    font-size:26px;
+
+}
+
+.resume-info h3{
+
+    font-size:18px;
+
+}
+
+}

@@ -1,0 +1,155 @@
+{/*import { useState } from "react";
+import { supabase } from "../lib/supabase";
+import { Link, useNavigate } from "react-router-dom";
+import "./Auth.css";
+
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      alert(error.message);
+    } else {
+      alert("Login successful");
+      navigate("/dashboard");
+    }
+  };
+
+  return (
+    <div className="auth-container">
+      <div className="auth-card">
+        <h1>CareerAI</h1>
+        <h2>Welcome Back</h2>
+
+        <form onSubmit={handleLogin}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <button type="submit">
+            Login
+          </button>
+        </form>
+
+        <p>
+          Don't have an account?
+          <Link to="/signup"> Signup</Link>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default Login;*/}
+
+import { useState } from "react";
+import { supabase } from "../lib/supabase";
+import { Link, useNavigate } from "react-router-dom";
+import "./Auth.css";
+
+function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      alert(error.message);
+    } else {
+      navigate("/dashboard");
+    }
+  };
+
+  return (
+    <div className="auth-page">
+      <Link to="/" className="back-home">
+  ← Back to Home
+</Link>
+      <div className="auth-card">
+       
+        <h1>CareerAI</h1>
+
+        <p>
+          Welcome back 👋 <br />
+          Sign in to continue your AI Resume journey.
+        </p>
+
+        <form
+          className="auth-form"
+          onSubmit={handleLogin}
+        >
+
+          <label>Email</label>
+
+<input
+  type="email"
+  placeholder="Enter your email"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  required
+/>
+
+          <label>Password</label>
+
+<input
+  type="password"
+  placeholder="Enter your password"
+  value={password}
+  onChange={(e) => setPassword(e.target.value)}
+  required
+/>
+
+          <button
+            className="auth-btn"
+            type="submit"
+          >
+            Login
+          </button>
+
+        </form>
+
+        <div className="auth-footer">
+
+          Don't have an account?{" "}
+
+          <Link to="/signup">
+            Sign Up
+          </Link>
+
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
+
+export default Login;
