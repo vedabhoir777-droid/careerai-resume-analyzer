@@ -89,7 +89,6 @@ careerai-resume-analyzer/
 # 📸 Screenshots
 
 ## 🏠 Landing Page
-
 ![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/4f74ad14d5723092ea8faa1215345b3f4fd29907/Landing.png)
 ---
 ## 🔐 Login Page
@@ -105,21 +104,25 @@ careerai-resume-analyzer/
 ## 📊 Dashboard
 
 ![iamge alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/4af96ad10c522b5f6a2b603d91ebcd6f4c5c2dcc/Dashboard.png)
+
 ---
 
 ## 📄 Resume Manager
 
 ![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/c91bfd0ab0d7884f04fb29ece491bffc4d9f55a1/Resume_manager.png)
+
 ---
 
 ## 🤖 AI Resume Analysis
 
 ![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/8820d0b911aef7b90645cbfd0f10659d4859921a/AI_analysis.png)
+
 ---
 
 ## 👁 Groq Vision Analysis
 
 ![iamge alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/bdae1b56c13157eb507cc29b4a0d348c827b8cf9/Groq_vision.png)
+
 ---
 
 ## 📈 Analytics Dashboard
