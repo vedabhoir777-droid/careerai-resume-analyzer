@@ -91,55 +91,46 @@ careerai-resume-analyzer/
 ## 🏠 Landing Page
 
 ![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/4f74ad14d5723092ea8faa1215345b3f4fd29907/Landing.png)
-
 ---
-
 ## 🔐 Login Page
 
-*(Insert Screenshot)*
-
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/dc9c1264b1dab7433dd5b9180bfd58a14cb4b36f/Login.png)
 ---
-
 ## 📝 Signup Page
 
-*(Insert Screenshot)*
+![image alt]()
 
 ---
 
 ## 📊 Dashboard
 
-*(Insert Screenshot)*
-
+![iamge alt]()
 ---
 
 ## 📄 Resume Manager
 
-*(Insert Screenshot)*
-
+![image alt]()
 ---
 
 ## 🤖 AI Resume Analysis
 
-*(Insert Screenshot)*
-
+![image alt]()
 ---
 
 ## 👁 Groq Vision Analysis
 
-*(Insert Screenshot)*
-
+![iamge alt]()
 ---
 
 ## 📈 Analytics Dashboard
 
-*(Insert Screenshot)*
+![image alt]()
 
 ---
 
 ## 👤 Profile Page
 
-*(Insert Screenshot)*
-
+![image alt]()
 ---
 
 # 🔄 Application Workflow
