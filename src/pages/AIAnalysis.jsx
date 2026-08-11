@@ -94,7 +94,7 @@ useEffect(() => {
           setSelectedReport(item.analysis_result)
         }
       >
-        View Report
+        📄 View AI Report
       </button>
 
     </div>

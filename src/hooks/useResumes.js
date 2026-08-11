@@ -2,7 +2,7 @@ import { useState } from "react";
 import { supabase } from "../lib/supabase";
 
 
-function useResumes(user){
+function useResumes(user) {
 
   const [resumes, setResumes] = useState([]);
 
@@ -11,21 +11,21 @@ function useResumes(user){
   const [file, setFile] = useState(null);
 
   const [editId, setEditId] = useState(null);
+  const [loading, setLoading] = useState(false);
 
 
+  async function getResumes() {
 
-  async function getResumes(){
+    if (!user) return;
 
-    if(!user) return;
-
-    const {data,error}=await supabase
+    const { data, error } = await supabase
       .from("resumes")
       .select("*")
-      .eq("user_id",user.id)
-      .order("created_at",{ascending:false});
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: false });
 
 
-    if(!error){
+    if (!error) {
       setResumes(data || []);
     }
 
@@ -33,50 +33,51 @@ function useResumes(user){
 
 
 
-  async function uploadResume(){
+  async function uploadResume() {
 
-    if(!title || !skills || !file){
-      alert("Please fill all fields and choose PDF");
+    if (!title || !skills || !file) {
+      alert("⚠ Please fill all fields and choose a PDF file.");
       return;
     }
+    setLoading(true);
+
+    const filePath = `${user.id}/${Date.now()}-${file.name}`;
 
 
-    const filePath=`${user.id}/${Date.now()}-${file.name}`;
-
-
-    const {error:uploadError}=await supabase.storage
+    const { error: uploadError } = await supabase.storage
       .from("resumes")
-      .upload(filePath,file);
+      .upload(filePath, file);
 
 
-    if(uploadError){
+    if (uploadError) {
+      setLoading(false);
       alert(uploadError.message);
       return;
     }
 
 
 
-    const {error}=await supabase
+    const { error } = await supabase
       .from("resumes")
       .insert({
 
         title,
         skills,
-        file_path:filePath,
-        user_id:user.id
+        file_path: filePath,
+        user_id: user.id
 
       });
 
 
 
-    if(error){
+    if (error) {
+      setLoading(false);
       alert(error.message);
       return;
     }
 
 
-    alert("Resume uploaded successfully");
-
+    alert("✅ Resume uploaded successfully.");
 
     setTitle("");
     setSkills("");
@@ -84,19 +85,34 @@ function useResumes(user){
 
 
     getResumes();
+    setLoading(false);
 
   }
 
 
 
 
-  async function deleteResume(id){
+  async function deleteResume(id) {
 
-    await supabase
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this resume?"
+    );
+
+    if (!confirmDelete) {
+      return;
+    }
+
+    const { error } = await supabase
       .from("resumes")
       .delete()
-      .eq("id",id);
+      .eq("id", id);
 
+    if (error) {
+      alert(error.message);
+      return;
+    }
+
+    alert("✅ Resume deleted successfully.");
 
     getResumes();
 
@@ -105,7 +121,7 @@ function useResumes(user){
 
 
 
-  function editResume(resume){
+  function editResume(resume) {
 
     setTitle(resume.title);
     setSkills(resume.skills);
@@ -116,9 +132,9 @@ function useResumes(user){
 
 
 
-  async function updateResume(){
+  async function updateResume() {
 
-    const {error}=await supabase
+    const { error } = await supabase
       .from("resumes")
       .update({
 
@@ -126,11 +142,11 @@ function useResumes(user){
         skills
 
       })
-      .eq("id",editId);
+      .eq("id", editId);
 
 
 
-    if(error){
+    if (error) {
 
       alert(error.message);
       return;
@@ -138,7 +154,7 @@ function useResumes(user){
     }
 
 
-    alert("Resume updated");
+    alert("✅ Resume updated successfully.");
 
 
     setEditId(null);
@@ -152,15 +168,15 @@ function useResumes(user){
 
 
 
-  async function viewResume(filePath){
+  async function viewResume(filePath) {
 
-    const {data,error}=await supabase.storage
+    const { data, error } = await supabase.storage
       .from("resumes")
-      .createSignedUrl(filePath,3600);
+      .createSignedUrl(filePath, 3600);
 
 
 
-    if(error){
+    if (error) {
 
       alert(error.message);
       return;
@@ -168,16 +184,18 @@ function useResumes(user){
     }
 
 
-    window.open(data.signedUrl,"_blank");
+    window.open(data.signedUrl, "_blank");
 
   }
 
 
 
 
-  return{
+  return {
 
     resumes,
+
+    loading,
 
     title,
     setTitle,

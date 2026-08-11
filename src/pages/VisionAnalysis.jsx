@@ -15,6 +15,7 @@ function VisionAnalysis() {
     setSelectedVisionReport,
     analyzeImageResume,
     getVisionHistory,
+    loading,
   } = useVisionAnalysis(user);
 
   useEffect(() => {
@@ -72,8 +73,9 @@ function VisionAnalysis() {
         <button
           className="upload-btn"
           onClick={analyzeImageResume}
+          disabled={loading}
         >
-          🔍 Analyze Resume
+          {loading ? "⏳ Analyzing..." : "🔍 Analyze Resume"}
         </button>
 
       </div>
@@ -126,17 +128,17 @@ function VisionAnalysis() {
 
               <div>
 
-               <strong>
-  📄 {
-    item.image_url &&
-    item.image_url !== "null" &&
-    item.image_url.trim() !== ""
-      ? item.image_url
-      : "Resume Image"
-  }
-</strong>
+                <strong>
+                  📄 {
+                    item.image_url &&
+                      item.image_url !== "null" &&
+                      item.image_url.trim() !== ""
+                      ? item.image_url
+                      : "Resume Image"
+                  }
+                </strong>
 
-                <br/>
+                <br />
 
                 <small
                   style={{
@@ -151,14 +153,14 @@ function VisionAnalysis() {
               </div>
 
               <button
-  className="history-btn"
-  onClick={() => {
-    console.log(item.analysis_result); // test
-    setSelectedVisionReport(item.analysis_result);
-  }}
->
-  👁 View Report
-</button>
+                className="history-btn"
+                onClick={() => {
+                  console.log(item.analysis_result); // test
+                  setSelectedVisionReport(item.analysis_result);
+                }}
+              >
+                👁 View Vision Report
+              </button>
 
             </div>
 

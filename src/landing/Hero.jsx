@@ -11,7 +11,7 @@ function Hero() {
       <div className="hero-left">
 
         <span className="hero-badge">
-          🚀 AI Powered Resume Analyzer
+          ✨ CareerAI Resume Analyzer
         </span>
 
         <h1>

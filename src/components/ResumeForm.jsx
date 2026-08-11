@@ -7,6 +7,7 @@ function ResumeForm({
   editId,
   updateResume,
   uploadResume,
+  loading,
 }) {
   return (
     <div className="upload-section">
@@ -56,11 +57,22 @@ function ResumeForm({
 
         </div>
 
-        <button
+        {/* <button
           className="upload-btn"
           onClick={editId ? updateResume : uploadResume}
         >
           {editId ? "Update Resume" : "Upload Resume"}
+        </button> */}
+        <button
+          className="upload-btn"
+          onClick={editId ? updateResume : uploadResume}
+          disabled={loading}
+        >
+          {loading
+            ? "Uploading..."
+            : editId
+              ? "Update Resume"
+              : "Upload Resume"}
         </button>
 
       </div>

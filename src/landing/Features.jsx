@@ -48,8 +48,9 @@ function Features() {
         </h2>
 
         <p>
-          CareerAI combines Artificial Intelligence with ATS optimization
-          to help you create professional resumes that stand out.
+          Analyze your resume with AI, optimize ATS compatibility,
+          receive Vision AI feedback, and unlock personalized
+          career insights — all in one intelligent platform.
         </p>
 
       </div>

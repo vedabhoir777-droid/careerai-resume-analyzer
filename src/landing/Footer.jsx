@@ -24,9 +24,9 @@ function Footer() {
 
             <h3>Product</h3>
 
-            <a href="#">AI Analysis</a>
-            <a href="#">Vision Analysis</a>
-            <a href="#">Resume Manager</a>
+            <span>AI Analysis</span>
+            <span>Vision Analysis</span>
+            <span>Resume Manager</span>
 
           </div>
 
@@ -34,9 +34,9 @@ function Footer() {
 
             <h3>Company</h3>
 
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
+            <span>About</span>
+            <span>Features</span>
+            <span>Contact</span>
 
           </div>
 
@@ -44,9 +44,9 @@ function Footer() {
 
             <h3>Resources</h3>
 
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Help Center</a>
+            <span>Privacy</span>
+            <span>Terms</span>
+            <span>Help Center</span>
 
           </div>
 

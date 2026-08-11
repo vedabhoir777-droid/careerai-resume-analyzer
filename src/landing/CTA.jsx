@@ -1,6 +1,9 @@
 import "./CTA.css";
+import { useNavigate } from "react-router-dom";
 
 function CTA() {
+  const navigate = useNavigate();
+
   return (
     <section id="about" className="cta">
 
@@ -16,7 +19,7 @@ function CTA() {
           recommendations in seconds.
         </p>
 
-        <button>
+        <button onClick={() => navigate("/signup")}>
           🚀 Start Analyzing
         </button>
 

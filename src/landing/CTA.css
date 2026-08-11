@@ -1,41 +1,91 @@
 .cta{
-    padding:100px 8%;
+    padding:130px 8%;
     background:#08111f;
 }
 
 .cta-box{
 
-    max-width:900px;
+    position:relative;
+
+    max-width:950px;
 
     margin:auto;
 
     text-align:center;
 
-    padding:70px 50px;
+    padding:80px 60px;
 
-    border-radius:25px;
+    border-radius:28px;
 
-    background:linear-gradient(
-        135deg,
-        #1e3a8a,
-        #2563eb
-    );
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(96,165,250,.25),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #172554,
+            #1d4ed8
+        );
 
-    box-shadow:0 20px 45px rgba(37,99,235,.25);
+    border:1px solid rgba(147,197,253,.2);
+
+    box-shadow:
+        0 25px 70px rgba(37,99,235,.25);
+
+    overflow:hidden;
 
 }
+
+
+/* Soft background glow */
+
+.cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(96,165,250,.12);
+
+    filter:blur(60px);
+
+    top:-150px;
+
+    right:-100px;
+
+    pointer-events:none;
+
+}
+
 
 .cta-box h2{
 
+    position:relative;
+
     color:white;
 
-    font-size:46px;
+    font-size:48px;
 
-    margin-bottom:20px;
+    line-height:1.2;
+
+    margin-bottom:22px;
+
+    font-weight:800;
 
 }
 
+
 .cta-box p{
+
+    position:relative;
 
     color:#dbeafe;
 
@@ -43,25 +93,26 @@
 
     line-height:1.8;
 
-    max-width:650px;
+    max-width:680px;
 
-    margin:auto;
-
-    margin-bottom:35px;
+    margin:0 auto 38px;
 
 }
 
+
 .cta-box button{
+
+    position:relative;
 
     padding:16px 38px;
 
     border:none;
 
-    border-radius:12px;
+    border-radius:14px;
 
     background:white;
 
-    color:#2563eb;
+    color:#1d4ed8;
 
     font-size:17px;
 
@@ -71,34 +122,36 @@
 
     transition:.3s;
 
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
 }
+
 
 .cta-box button:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-4px) scale(1.02);
 
-    box-shadow:0 15px 30px rgba(255,255,255,.25);
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
 
 }
+
 
 @media(max-width:768px){
 
-.cta{
+    .cta{
+        padding:80px 25px;
+    }
 
-padding:70px 30px;
+    .cta-box{
+        padding:60px 25px;
+    }
 
-}
+    .cta-box h2{
+        font-size:35px;
+    }
 
-.cta-box{
-
-padding:50px 25px;
-
-}
-
-.cta-box h2{
-
-font-size:34px;
-
-}
+    .cta-box p{
+        font-size:16px;
+    }
 
 }

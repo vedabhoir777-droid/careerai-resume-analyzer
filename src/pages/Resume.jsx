@@ -12,6 +12,7 @@ function Resume() {
 
   const {
     resumes,
+    loading,
     title,
     setTitle,
     skills,
@@ -52,6 +53,7 @@ function Resume() {
         editId={editId}
         uploadResume={uploadResume}
         updateResume={updateResume}
+        loading={loading}
       />
 
       <div style={{ marginTop: "35px" }}>

@@ -7,35 +7,35 @@ function Stats() {
       <div className="stats-heading">
         <span>OUR IMPACT</span>
 
-        <h2>Helping Students Build Better Careers</h2>
+        <h2>Everything You Need In One Platform</h2>
 
         <p>
-          CareerAI provides intelligent resume analysis to help
-          students and professionals improve their chances of
-          getting shortlisted.
+          CareerAI combines AI Resume Analysis, Vision AI,
+          ATS scoring and Resume Management into one
+          modern career platform.
         </p>
       </div>
 
-      <div className="stats-grid">
+     <div className="landing-stats-grid">
 
         <div className="stat-card">
-          <h3>1000+</h3>
-          <p>Resumes Analyzed</p>
+          <h3>3</h3>
+          <p>AI Modules</p>
         </div>
 
         <div className="stat-card">
-          <h3>95%</h3>
-          <p>ATS Accuracy</p>
+          <h3>100%</h3>
+          <p>Cloud Based</p>
         </div>
 
         <div className="stat-card">
-          <h3>24/7</h3>
-          <p>AI Availability</p>
+          <h3>ATS</h3>
+          <p>Resume Scoring</p>
         </div>
 
         <div className="stat-card">
-          <h3>50+</h3>
-          <p>Career Suggestions</p>
+          <h3>Vision AI</h3>
+          <p>Image Analysis</p>
         </div>
 
       </div>
