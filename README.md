@@ -90,10 +90,12 @@ careerai-resume-analyzer/
 
 ## 🏠 Landing Page
 ![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/dbb94d5e4f19ebb8a00c34b89f31825795d1a24b/Landing_page.png)
+
 ---
 ## 🔐 Login Page
 
 ![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/dc9c1264b1dab7433dd5b9180bfd58a14cb4b36f/Login.png)
+
 ---
 ## 📝 Signup Page
 
