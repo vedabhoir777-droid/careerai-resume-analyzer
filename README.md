@@ -127,7 +127,7 @@ careerai-resume-analyzer/
 
 ## 📈 Analytics Dashboard
 
-![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/982d636fedc0f4a8fb487925da5e0272ca0fc9ba/Analytics.png)
+![image alt](https://github.com/vedabhoir777-droid/careerai-resume-analyzer/blob/d8fd2a71dd68b0ac199b311b3db5b092adb23eb2/Analytics_page.png)
 
 ---
 
